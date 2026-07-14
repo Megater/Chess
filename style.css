@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    background-color: rgb(0, 136, 255);
+
+
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+
+}
+
+
+#chessboard {
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid #181818;
+    border-collapse: collapse;
+
+}
+
+#chessboard tr td {
+    height: 60px;
+    width: 60px;
+}
+
+#chessboard tr:nth-child(even) td:nth-child(odd) {
+    background: #000000;
+}
+
+#chessboard tr:nth-child(odd) td:nth-child(even) {
+    background: #000000;
+}
